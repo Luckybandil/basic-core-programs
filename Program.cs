@@ -7,7 +7,12 @@ namespace basic_core_programs
         public static void Main(string[] args)
             
         {
-            switch (all)
+            Console.WriteLine(" 1.Test \n 2.PrimeEven \n 3.FlipCoin \n 4.EvenOdd \n 5.HarmonicNum \n 6.Swap \n 7.LargestNumber \n 8.Vowels  \n 9.QuotientandReminder \n 10.PowerByTwo \n 11.Factor \n 12.Exit \n");
+            bool flag = true;
+            while (true)
+            {
+                int num = int.Parse(Console.ReadLine());
+                  switch (num)
             {
                 case 1:
                     Test t = new Test();
@@ -62,14 +67,18 @@ namespace basic_core_programs
                 case 11:
                     Factor factor = new Factor();
                     factor.fac();
-                default;
+                case 12:
+                   break;
+                  default:
+                        Console.WriteLine("Enter correct option");
+                        break;
             }
 
         }
            
-          
+    }     
 
-        
+  }     
          
-    }
+
 }
